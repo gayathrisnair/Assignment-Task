@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMinAPI", "ArrayMinAPI\ArrayMinAPI.csproj", "{C5A37D06-B4F6-4EAB-B420-053E0A607873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMinTests", "ArrayMinAPITests\ArrayMinTests.csproj", "{28797B69-7201-435F-B7B5-92BCC6145C4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMinTests", "ArrayMinTests\ArrayMinTests.csproj", "{28797B69-7201-435F-B7B5-92BCC6145C4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
