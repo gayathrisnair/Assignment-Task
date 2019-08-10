@@ -18,10 +18,10 @@ namespace ArrayMinAPI.Services
 
         }
 
-        public int FindSecondMin(int[] arrayInput)
+        public decimal FindSecondMin(decimal[] arrayInput)
         {
             Validate(arrayInput);
-            int min = int.MaxValue, secondMin = int.MaxValue;
+            decimal min = decimal.MaxValue, secondMin = decimal.MaxValue;
             foreach(var item in arrayInput)
             {
                 if(item <= min)
@@ -41,7 +41,7 @@ namespace ArrayMinAPI.Services
         public List<RequestLogDto> GetRequestLog() =>
             _requestLogDbAccess.GetRequestLog();
 
-        public void Validate(int[] arrayInput)
+        public void Validate(decimal[] arrayInput)
         {
             if (arrayInput == null || arrayInput.IsNullOrEmpty())
             {

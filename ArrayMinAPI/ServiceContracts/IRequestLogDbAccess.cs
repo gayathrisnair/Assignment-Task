@@ -8,7 +8,7 @@ namespace ArrayMinAPI.ServiceContracts
 {
     public interface IRequestLogDbAccess
     {
-        void Add(int ouput, int[] input);
+        void Add(decimal ouput, decimal[] input);
         List<RequestLogDto> GetRequestLog();
     }
 }

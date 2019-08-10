@@ -8,7 +8,7 @@ namespace ArrayMinAPI.ServiceContracts
 {
     public interface IArrayMinService
     {
-        int FindSecondMin(int[] arrayInput);
+        decimal FindSecondMin(decimal[] arrayInput);
         List<RequestLogDto> GetRequestLog();
     }
 }

@@ -11,7 +11,7 @@ namespace ArrayMinAPI.DbAccess
     public class RequestLogDbAccess : IRequestLogDbAccess
     {
         public DBContext _dbContext = new DBContext();
-        public void Add(int ouput,int[] input)
+        public void Add(decimal ouput, decimal[] input)
         {
             var requestlLog = new RequestLog()
             {

@@ -28,7 +28,7 @@ namespace ArrayMinAPI.Controllers
 
         [Route("find-min-number")]
         [HttpPost]
-        public int FindSecondMinNumber([FromBody]int[] input)
+        public decimal FindSecondMinNumber([FromBody]decimal[] input)
         {
             return _arrayMinService.FindSecondMin(input); 
         }

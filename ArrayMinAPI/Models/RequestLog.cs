@@ -8,7 +8,7 @@ namespace ArrayMinAPI.Models
     {
         public int Id { get; set; }
         public string Input { get; set; }
-        public int Output { get; set; }
+        public decimal Output { get; set; }
         internal static void ConfigureModel(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<RequestLog>().ToTable("RequestLog", "dbo");
