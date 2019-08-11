@@ -12,7 +12,7 @@ namespace ArrayMinAPI.Services.Tests
         [TestMethod()]
         public void FindSecondMinTest_WithDuplicates()
         {
-            var input = new int [] {4,2,2,4,5,5,1};
+            var input = new decimal [] {4,2,2,4,5,5,1};
             double expectedOutput = 2;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
@@ -23,7 +23,7 @@ namespace ArrayMinAPI.Services.Tests
         [TestMethod()]
         public void FindSecondMinTest()
         {
-            var input = new int[] { 1,4,30,56 };
+            var input = new decimal[] { 1,4,30,56 };
             double expectedOutput = 4;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
@@ -34,7 +34,7 @@ namespace ArrayMinAPI.Services.Tests
         [TestMethod()]
         public void FindSecondMinTest_WithNegativeNumbers()
         {
-            var input = new int[] { 1, -4, -30, 56 };
+            var input = new decimal[] { 1, -4, -30, 56 };
             double expectedOutput = -4;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
