@@ -9,6 +9,10 @@ namespace ArrayMinAPI.Context
 {
     public class DBContext : DbContext
     {
+        public DBContext()
+        {
+            System.Data.Entity.Database.SetInitializer<DBContext>(null);
+        }
         public DbSet<Models.RequestLog> RequestLogs { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace ArrayMinAPI.Services.Tests
         public void FindSecondMinTest_WithDuplicates()
         {
             var input = new decimal [] {4,2,2,4,5,5,1};
-            double expectedOutput = 2;
+            decimal expectedOutput = 2;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
             var result = arrayMinService.FindSecondMin(input);
@@ -24,7 +24,7 @@ namespace ArrayMinAPI.Services.Tests
         public void FindSecondMinTest()
         {
             var input = new decimal[] { 1,4,30,56 };
-            double expectedOutput = 4;
+            decimal expectedOutput = 4;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
             var result = arrayMinService.FindSecondMin(input);
@@ -35,7 +35,7 @@ namespace ArrayMinAPI.Services.Tests
         public void FindSecondMinTest_WithNegativeNumbers()
         {
             var input = new decimal[] { 1, -4, -30, 56 };
-            double expectedOutput = -4;
+            decimal expectedOutput = -4;
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
             var result = arrayMinService.FindSecondMin(input);
@@ -65,13 +65,13 @@ namespace ArrayMinAPI.Services.Tests
         [ExpectedException(typeof(HttpResponseException))]
         public void FindSecondMinNumberAPITest_InvalidInput()
         {
-            var input = new int[] {1};
+            var input = new decimal[] {1};
             var requestLog = new RequestLogDbAccess();
             var arrayMinService = new ArrayMinService(requestLog);
             var controller = new ArrayMinController(arrayMinService);
             try
             {
-                var result = controller.FindSecondMinNumber(null);
+                var result = controller.FindSecondMinNumber(input);
 
             }
             catch (HttpResponseException ex)
